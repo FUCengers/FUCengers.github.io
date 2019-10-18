@@ -1,100 +1,52 @@
-title: FUCengers
-url: "https://teal-worm.cloudvent.net"
-baseurl:
-google_analytics_key:
-google_maps_javascript_api_key:
-disqus_shortname:
+# Built with Jekyll 3.2.0
 
-# Default description in social shares for the jekyll-seo-tag gem
-description: Jekyll template with example content for a web agency.
+# Setup
+title:               Ed.
+tagline:             'a jekyll theme for minimal editions'
+description:         'Ed is a Jekyll theme designed for textual editors based on minimal computing principles, and focused on legibility and flexibility.'
+url:                 'http://elotroalex.github.io'
+baseurl:             '/ed'
 
-# Author details for the jekyll-seo-tag gem
+# About/contact
 author:
-  name:
-  email:
-  twitter: # twitter username without the @ symbol
+  name:              Alex Gil
+  url:               https://twitter.com/elotroalex
+  email:             colibri.alex@gmail.com
 
-# Social details for the jekyll-seo-tag gem
-social:
-  name: Urban Template
-  links:
-    - https://github.com/CloudCannon/urban-jekyll-template
+# Permalinks
 
-timezone: Etc/UTC
+# Color scheme. Options: red, orange, magenta, cyan, blue, brown
+color-scheme: 
 
+permalink: pretty
+permalink: /:title/
+
+# Set encoding to UTF-8
+encoding: utf-8
+
+# Collections for texts
 collections:
-  staff_members:
-    output: false
-  clients:
+  texts:
     output: true
 
-paginate: 10
-paginate_path: "/blog/:num/"
-permalink: pretty
+# Markdown specs
+markdown: kramdown
 
-jekyll-archives:
-  enabled:
-    - "categories"
+kramdown:
+  auto_ids:       true
+  footnote_nr:    1
+  entity_output:  as_char
+  footnote_backlink: "&#x21a9;&#xfe0e;"
+  toc_levels:     1..6
+  smart_quotes:   lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
 
-plugins:
-  - "jekyll-feed"
-  - "jekyll-seo-tag"
-  - "jekyll-paginate"
-  - "jekyll-archives"
-
+# Exclusions from the final site
 exclude:
-  - Gemfile
-  - Gemfile.lock
-  - README.md
-  - LICENCE
+  - optional
+  - vendor
 
-defaults:
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-      _options:
-        content:
-          width: 960
-          height: 2000
-  - scope:
-      path: ""
-      type: "clients"
-    values:
-      layout: "client"
-      _options:
-        image_path:
-          width: 2000
-          height: 2000
-  - scope:
-      path: ""
-      type: "staff_members"
-    values:
-      _options:
-        image_path:
-          width: 600
-          height: 600
-  - scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "page"
-  - scope:
-      path: "index.html"
-      type: "pages"
-    values:
-      layout: "default"
+# Theme
+theme: "ed."
 
-# -----------
-# CloudCannon
 
-social_icons:
-  - Facebook
-  - Instagram
-  - LinkedIn
-  - Pinterest
-  - Tumblr
-  - Twitter
-  - YouTube
-  - RSS
