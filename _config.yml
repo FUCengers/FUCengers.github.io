@@ -4,12 +4,12 @@
 title:               Ed.
 tagline:             'a jekyll theme for minimal editions'
 description:         'Ed is a Jekyll theme designed for textual editors based on minimal computing principles, and focused on legibility and flexibility.'
-url:                 'http://minicomp.github.io'
-baseurl:             '/ed'
+url:                 'http://fucengers.github.io'
+baseurl:             '/'
 
 # About/contact
 author:
-  name:              Alex Gil
+  name:              FUCengers
   url:               https://twitter.com/elotroalex
   email:             colibri.alex@gmail.com
 
