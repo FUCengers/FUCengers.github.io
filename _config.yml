@@ -1,10 +1,10 @@
-# Built with Jekyll 3.2.0
+# Built with Jekyll 3.6.0
 
 # Setup
 title:               Ed.
 tagline:             'a jekyll theme for minimal editions'
 description:         'Ed is a Jekyll theme designed for textual editors based on minimal computing principles, and focused on legibility and flexibility.'
-url:                 'http://elotroalex.github.io'
+url:                 'http://minicomp.github.io'
 baseurl:             '/ed'
 
 # About/contact
@@ -13,11 +13,10 @@ author:
   url:               https://twitter.com/elotroalex
   email:             colibri.alex@gmail.com
 
-# Permalinks
-
 # Color scheme. Options: red, orange, magenta, cyan, blue, brown
-color-scheme: 
+color-scheme:
 
+# Permalinks
 permalink: pretty
 permalink: /:title/
 
@@ -45,8 +44,19 @@ kramdown:
 exclude:
   - optional
   - vendor
+  - ed..gemspec
+  - Gemfile
+  - Gemfile.lock
+  - backstop_data
+  - backstop.json
 
 # Theme
-theme: "ed."
+# (Used for local or custom-server deployments)
+# Uncomment the `theme` line if using the Ed. theme gem on your own computer or server.
+# See https://jekyllrb.com/docs/themes/
+# theme: "ed."
 
-
+# Remote Theme
+# (Used only for GitHub deployments)
+# See https://help.github.com/en/articles/adding-a-jekyll-theme-to-your-github-pages-site
+remote_theme: minicomp/ed
